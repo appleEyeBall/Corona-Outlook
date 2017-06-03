@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/locate"
+        android:icon="@drawable/locate"
+        android:title="locate"
+        app:showAsAction="always">
+
+    </item>
+    <item
+        android:title="To Fahrenheit"
+        android:id="@+id/unit"
+        app:showAsAction="always">
+    </item>
+
+</menu>

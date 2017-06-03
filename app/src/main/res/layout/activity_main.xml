@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tisecodes.corona.outlook.Activities.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/sky_day"
+        android:scaleType="centerCrop"
+        android:id="@+id/activityBackground"/>
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:fitsSystemWindows="true"
+        android:id="@+id/appBarLayout"
+        app:expanded="false">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            android:id="@+id/collapsingToolBar"
+            app:expandedTitleMarginStart="20dp"
+            app:title="Corona">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_collapseMode="parallax">
+                <include layout="@layout/toolbar_weather_layout"/>
+            </RelativeLayout>
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                app:layout_collapseMode="pin"
+                android:id="@+id/toolbar">
+
+                <EditText
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:hint="Search city"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/searchCityView"
+                    android:visibility="gone"
+                    android:inputType="text"
+                    android:imeOptions="actionSearch"
+                    android:shadowColor="@color/lemon"/>
+
+            </android.support.v7.widget.Toolbar>
+
+
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <io.github.yuweiguocn.lib.squareloading.SquareLoading
+            android:layout_height="400dp"
+            android:layout_width="400dp"
+            app:squareColor="#f16796"
+            app:squareSize="22dp"
+            app:squareCorner="6dp"
+            app:dividerSize="6dp"
+            app:xCount="5"
+            app:yCount="3"
+            android:layout_centerInParent="true">
+
+        </io.github.yuweiguocn.lib.squareloading.SquareLoading>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/main_Container"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    </FrameLayout>
+
+</android.support.design.widget.CoordinatorLayout>

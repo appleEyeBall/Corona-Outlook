@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Corona Outlook</string>
+    <string name="app_Title">Corona</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="tomorrow"> Tomorrow </string>
+    <string name="blank">  </string>
+    <string name="degree"> \u00B0 </string>
+    <string name="feel"> Feels like  </string>
+    <string name="noData">No more forecasts for today</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="noInternet">Oops! please check internet connection </string>
+</resources>

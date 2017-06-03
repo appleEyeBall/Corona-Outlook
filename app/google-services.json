@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "301428297836",
+    "firebase_url": "https://corona-8fc0d.firebaseio.com",
+    "project_id": "corona-8fc0d",
+    "storage_bucket": "corona-8fc0d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:301428297836:android:2a8d9bec2b3bf2ff",
+        "android_client_info": {
+          "package_name": "com.tisecodes.corona.outlook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "301428297836-i17sa2bedb7lh5h3hvfiokfhc4h3fl8l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVMkvX1pGIrHOWFziaS-XNUtSIDzP2weU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
